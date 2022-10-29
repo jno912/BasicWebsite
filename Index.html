@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title and Meta -->
+            <title>Home | Koru Kawhe</title>
+            <meta charset="UTF-8">
+            <meta name="description" 
+                  content="A café in Waikato, NZ, specialising in organic food using fresh, high quality, local ingredients. We are passionate about the environment and use sustainable business practices and biodegradable packaging. Visit us today!">
+            <meta name="author" 
+                  content="Olive Jellyman">
+            <meta name="viewport" 
+                  content="width=device-width, initial-scale=1.0">
+        <!-- Stylesheet -->
+            <link rel="stylesheet" 
+                  href="stylesheet.css" 
+                  type="text/css">
+    </head>
+    <body>
+        <!-- Play Welcome Audio Script -->
+        <script>
+            function play() {
+              var audio = document.getElementById("audio");
+                      audio.play();
+                }
+        </script>
+
+        <header>
+            <!-- Main Menu -->
+            <nav id="main-menu">
+                <ul>
+                <li>
+                    <a href="AboutUs.html">Te Kaupapa <br><strong>About Us</strong></a></li>
+                <li>
+                    <a href="Menu.html">Rārangi Kai <br><strong>Menu</strong></a></li>
+                <li>
+                    <a href="Gallery.html">Whakaahua <br><strong>Gallery</strong></a></li>
+                <li>
+                    <a href="Contact.html">Kōrero Mai <br><strong>Contact Us</strong></a></li>
+                </ul>
+            </nav>
+    
+            <!-- Hamburger Menu -->
+            <input type="checkbox" id="hamburger-input" class="burger-shower">
+                <label id="hamburger-menu" for="hamburger-input">
+                    <nav id="sidebar-menu">
+                    <ul>
+                        <li id="active"><a href="Index.html">Whārangi Kāinga <strong>(Home)</strong></a></li>
+                        <li><a href="AboutUs.html">Te Kaupapa <strong>(About Us)</strong></a></li>
+                        <li><a href="Menu.html">Rārangi Kai <strong>(Menu)</strong></a></li>
+                        <li><a href="Gallery.html">Whakaahua <strong>(Gallery)</strong></a></li>
+                        <li><a href="Contact.html">Kōrero Mai <strong>(Contact Us)</strong></a></li>
+                    </ul>
+                    </nav>
+                </label>
+                <div class="overlay"></div>
+
+            <!-- Banner Image, Logo, and Titles -->
+            <div class="banner-box">
+                <a id="active" href="Index.html">
+                    <img id="logo" src="Pictures/logo2.png" alt="logo image of coffee cup and saucer with steam shaped like koru (spirals)">
+                </a>
+
+                <img class="banner" id="index-banner" src="Pictures/index-banner1.jpg" alt="a picture of two coffees on a table">
+                
+                <div class="banner-back">
+                    <div class="banner-titles">
+                        <div id="index-title">
+                            <h3>Whāngaihia to tinana ki te kai organic</h3>
+                            <h1>Koru Kawhe</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Body Copy -->
+            <div class="main">
+                <article>
+                    <div id="Welcome">
+                        <h2>Nau mai! Haere mai! Welcome to Koru Kawhe
+                            <!-- Audio -->
+                            <button class="soundicon">
+                                <img id="soundicon" src="Pictures/audio.png" alt="Nau mai! Haere mai! Welcome to Koru Kawhe!" onclick="play()">
+                                <audio id="audio" src="Audio/Welcome-audio.mp3"></audio>
+                            </button>
+                        </h2>
+                        <h3>
+                        We specialise in good company, great kai (food), and exceptional kawhe (coffee).
+                        </h3>
+                    </div>
+
+                    <p>
+                        Our motto means, "Nourish your body with organic food." Situated in the heart of the Waikato, close to many tourist attractions such as Mt Pirongia and the Waitomo Caves, we offer an authentic experience of Aotearoa New Zealand cuisine and language.
+                    </p>
+
+                    <p>
+                        Good company, great kai (food) and exceptional kawhe (coffee). We are a local cafe focused on the Māori practices of kaitiakitanga (guardianship) and sustainability.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div id="soc-media">
+                <a href="www.facebook.com">
+                    <img class="social" id="FB" src="Pictures/FB.jpg"  alt="link to Facebook">
+                </a>
+                <a href="www.twitter.com">
+                    <img class="social" id="Twitter" src="Pictures/Twittr.jpg" alt="link to Twitter">
+                </a>
+                <a href="www.instagram.com">
+                    <img class="social" id="Insta" src="Pictures/Insta.jpg" alt="link to Instagram">
+                </a>
+            </div>
+        </main>
+        <footer>
+            <p>
+                <strong>Koru Kawhe</strong>
+                <br>
+                SH39, Pirongia
+                <br>
+                (07) 599 9999
+                <br>
+                <br>
+                © 2022 Koru Kawhe
+            </p>
+        </footer>
+    </body>
+</html>

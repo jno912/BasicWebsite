@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title and Meta -->
+            <title>Gallery | Koru Kawhe</title>
+            <meta charset="UTF-8">
+            <meta name="description" 
+                  content="A café in Waikato, NZ, specialising in organic food using fresh, high quality, local ingredients. We are passionate about the environment and use sustainable business practices and biodegradable packaging. Visit us today!">
+            <meta name="author" 
+                  content="Olive Jellyman">
+            <meta name="viewport" 
+                  content="width=device-width, initial-scale=1.0">
+        <!-- Stylesheet -->
+            <link rel="stylesheet" 
+                  href="stylesheet.css" 
+                  type="text/css">
+    </head>
+    <body>
+        <header>
+            <!-- Main Menu -->
+            <nav id="main-menu">
+                <ul>
+                <li>
+                    <a href="AboutUs.html">Te Kaupapa <br><strong>About Us</strong></a></li>
+                <li>
+                    <a href="Menu.html">Rārangi Kai <br><strong>Menu</strong></a></li>
+                <li id="active">
+                    <a href="Gallery.html">Whakaahua <br><strong>Gallery</strong></a></li>
+                <li>
+                    <a href="Contact.html">Kōrero Mai <br><strong>Contact Us</strong></a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu -->
+            <input type="checkbox" id="hamburger-input" class="burger-shower">
+                <label id="hamburger-menu" for="hamburger-input">
+                    <nav id="sidebar-menu">
+                    <ul>
+                        <li><a href="Index.html">Whārangi Kāinga <strong>(Home)</strong></a></li>
+                        <li><a href="AboutUs.html">Te Kaupapa <strong>(About Us)</strong></a></li>
+                        <li><a href="Menu.html">Rārangi Kai <strong>(Menu)</strong></a></li>
+                        <li id="active"><a href="Gallery.html">Whakaahua <strong>(Gallery)</strong></a></li>
+                        <li><a href="Contact.html">Kōrero Mai <strong>(Contact Us)</strong></a></li>
+                    </ul>
+                    </nav>
+                </label>
+                <div class="overlay"></div>
+
+            <!-- Banner Image, Logo, and Titles -->
+            <div class="banner-box">
+                <a id="active" href="Index.html">
+                    <img id="logo" src="Pictures/logo2.png" alt="logo image of coffee cup and saucer with steam shaped like koru (spirals)">
+                </a>
+
+                <img class="banner" id="gallery-banner" src="Pictures/gallery-banner.jpg" alt="a picture of two coffees on a table">
+                
+                <div class="banner-back">
+                    <div class="banner-titles">
+                        <div id="index-title">
+                            <h3>Whāngaihia to tinana ki te kai organic</h3>
+                            <h1>Koru Kawhe</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+                <h2 id="page-title">Whakaahua<br><strong>Gallery</strong></h2>
+            <!-- Container for the image gallery -->
+            <div class="container" onload="currentSlide(1)">
+                
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                    <img src="Pictures\gallery1.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                    <img src="Pictures\gallery2.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                    <img src="Pictures\gallery3.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                    <img src="Pictures\gallery4.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                    <img src="Pictures\gallery5.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                    <img src="Pictures\gallery6.jpg" style="width:100%">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="Pictures\gallery1.jpg" style="width:100%" onclick="currentSlide(1)" alt="A selection of our lunch menu offerings.">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Pictures\gallery2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Locally sourced green mussels used in our recipes.">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Pictures\gallery3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Locally sourced oysters used in our recipes.">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Pictures\gallery4.jpg" style="width:100%" onclick="currentSlide(4)" alt="A seafood dish presented in a scallop shell.">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Pictures\gallery5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Two coffees sitting on one of our long tables for larger groups.">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Pictures\gallery6.jpg" style="width:100%" onclick="currentSlide(6)" alt="A kawhe (coffee).">
+                </div>
+                </div>
+            </div>
+
+            <script src="gallery.js"></script>
+                <br>
+            <!-- Social Media Buttons -->
+            <div id="soc-media">
+                <a href="www.facebook.com">
+                    <img class="social" id="FB" src="Pictures/FB.jpg"  alt="link to Facebook">
+                </a>
+                <a href="www.twitter.com">
+                    <img class="social" id="Twitter" src="Pictures/Twittr.jpg" alt="link to Twitter">
+                </a>
+                <a href="www.instagram.com">
+                    <img class="social" id="Insta" src="Pictures/Insta.jpg" alt="link to Instagram">
+                </a>
+            </div>
+        </main>
+    </body>
+    <footer>
+        <p>
+            <strong>Koru Kawhe</strong>
+            <br>
+            SH39, Pirongia
+            <br>
+            (07) 599 9999
+            <br>
+            <br>
+            © 2022 Koru Kawhe
+        </p>
+    </footer>
+</html>
